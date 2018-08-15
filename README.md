@@ -3,7 +3,7 @@ New type of interactivity for weddings. From sharing photos from guests devices,
 
 ## Installation Instructions
 1. cd cliente/
-1a. npm install
-1b. bower install
+a. npm install
+b. bower install
 2. cd node-express/
-2a. npm install
+a. npm install

@@ -8,8 +8,8 @@ var express = require('express'),
     Busboy = require('busboy');
 
 AWS.config.update({
-    secretAccessKey: 'NtMti+9/Y/RdEfFDn+L1bBiMBsiCy9aGOepq5FdX',
-    accessKeyId: 'AKIAIDDLAOZU4DRK2MOQ'
+    secretAccessKey: '',
+    accessKeyId: ''
 });
 
 var app = express(),

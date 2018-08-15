@@ -1,2 +1,5 @@
 node_modules
 bower_components
+
+# Individual files
+node-express/app/aws_config.json

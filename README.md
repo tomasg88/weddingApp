@@ -1,6 +1,9 @@
 # weddingApp
 New type of interactivity for weddings. From sharing photos from guests devices, to broadcasting messages
 
+### Version
+0.1.0
+
 ## Installation Instructions
 1. cd cliente/
 2. npm install

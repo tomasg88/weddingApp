@@ -4,7 +4,9 @@
   "description": "Interact with Amazon S3 - upload and download images",
   "main": "index.js",
   "scripts": {
-    "start": "node app/index.js"
+    "start": "nodemon app/index.js",
+    "create-db": "cd dynamodb && node createCarsTable.js && cd ..",
+    
   },
   "author": "Tomas Gonzalez",
   "license": "ISC",

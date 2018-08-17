@@ -4,3 +4,4 @@ documentacion
 
 # Individual files
 node-express/app/aws_config.json
+node-express/app/local-db/dynamoDB

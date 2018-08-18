@@ -1,0 +1,25 @@
+App - Secciones/Contenido
+
+Todos los invitados verán:
+
+----- MENU ------
+    INFO -
+Ceremonia: dirección, horario, mapa.
+Fiesta: dirección, horario, mapa.
+    MENU - ¿Tenés un menú especial?
+Vegetariano, Vegano, Celíaco, No.
+    JUEGO -
+Trivia, Preguntas y respuetas
+    SACA FOTOS y COMPARTILAS
+(abre la camara, y un boton hace POST a /upload)
+
+
+
+(Post casamiento)
+    MUSICA:
+Set recepcion de Ezequiel Anile.
+
+
+
+    ADMIN:
+Broadcast Mensaje a todos

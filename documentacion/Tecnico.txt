@@ -1,0 +1,42 @@
+1. Tablas
+    a. usuarios
+        (number) PK - Id
+        (number) telefono
+        (string) tipo usuario (admin o invitado)
+        (string) Nombre (opcional)
+        (string) Menu (opcional): {opcion seleccionada} + ' - ' + {comentario}
+        (bool) isOnline
+        (string) gameResult
+    b. images
+        (number) PK telefono - uploader
+        (number) PK nombre imagen
+        (string) comentario
+    c. messages
+        (number) messageId
+        (number) telefono - sender: el de candela, sergio o el mio.
+        (string) message -
+        
+
+2. S3 - imagenes
+    Se guardan con nombre customizado: {telefono} + '_' + {numero imagen}
+
+
+3. Endpoints
+    POST /users/login -> crea registro con numero de telefono y nombre si lo paso
+        body: {
+            telefono
+            nombre (opcional)
+        }
+        response: ok o !ok
+    PUT /users/game -> actualiza gameResult
+        body: {
+            result: "Terminado parcial"/"Terminado total"/"No terminado"
+        }
+        response: ok o !ok
+    PUT /users/connect -> actualiza isOnline con true
+        body: {}
+        response: ok o !ok
+    PUT /users/logout -> actualiza isOnline con false
+        response: ok o !ok
+
+4.

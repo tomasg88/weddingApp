@@ -1,0 +1,67 @@
+a. 1er login - Identificar usuarios
+    1. Abre la app
+    2. Se solicita numero de telefono - formato (cod area) + caracteristica + numero.
+        Ej: 11-3392-5482; 223-564-2312;
+    3. Se registra ese numero de telefono - Guarda en BD
+        3a. Si el telefono es el de Candela, el mio, o el de Sergio se marcan como Admins.
+    4. Back responde con ID de la bbdd y tipo usuario (todos son invitados salvo Candela y yo)
+    5. El id se guarda internamente
+    6. Redireccion a home
+    7. Marcado el usuario como online
+
+
+b. Abrir app !(1er login) - Vuelta a abrir
+    1. Abre app
+    2. Busca el id almacenado en el 1er login
+    3. Redireccion a home
+    4. Se marca el usuario como online
+
+
+c. Compartir imagenes
+    1. Abre la App
+    2. Click opcion "Album fotos"
+    3. Enciende la camara del celular
+    4. Ofrece para escribir Mensaje
+    5. Compartir
+    6. Se guarda la imagen en S3 y el mensaje en la tabla FOTOS (junto con id de foto)
+
+
+d. ADMIN - Broadcast mensajes
+    1. Abre app
+    2. Si es admin se habilita una opcion Broadcast
+    3. Cuadro de texto para insertar mensaje
+    4. Chequeamos quienes estan online y les mandamos el msg
+
+
+e. Ver INFO - Iglesia/Fiesta
+    1. Abre la App
+    2. Busca id almacenado en 1er login
+    3. Apreta en la opcion de INFO
+    4. Apreta la opcion Iglesia/Fiesta
+    5. Se muestra pantalla con Nombre del lugar, horario, direccion y "foto del mapa". Al hacer click abre google maps
+
+
+f. Ver MENU
+    1. Abre la App
+    2. Busca id almacenado en 1er login
+    3. Apreta en la opcion de MENU
+    4. "Si necesitas algun menu distinto (sin carne de cerdo, celiaco o vegetariano) selecciona cual preferis:"
+    5. Se envia la opcion asociada al numero de celular
+
+
+g. Logout
+    1. Se cierra la App
+    2. Mensaje al back con Logout
+    3. Se marca el usuario como NO ONLINE
+
+
+h. Trivia
+    1. Abre la App
+    2. Busca id almacenado en 1er login
+    3. Apreta la opcion de TRIVIA
+    4. Empieza el juego (preguntas y respuestas)
+    5. En cada pregunta se valida si es correcta o incorrecta
+    6. Se envia al back registro del JUEGO
+        a. Terminado parcial - lo completaron pero hubo errores
+        b. Terminado total - completado 100% correcto
+        c. No terminado - Empezaron y no terminaron
